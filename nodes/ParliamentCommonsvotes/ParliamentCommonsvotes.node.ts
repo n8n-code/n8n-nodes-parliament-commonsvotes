@@ -3,14 +3,14 @@ import { NodeConnectionTypes, type INodeType, type INodeTypeDescription } from '
 
 export class ParliamentCommonsvotes implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'parliament-commonsvotes',
+		displayName: 'Parliament Commonsvotes',
 		name: 'N8nDevParliamentCommonsvotes',
 		icon: { light: 'file:./parliament-commonsvotes.svg', dark: 'file:./parliament-commonsvotes.dark.svg' },
 		group: ['input'],
 		version: 1,
 		subtitle: '={{\$parameter["operation"] + ": " + \$parameter["resource"]}}',
 		description: 'API that allows querying of Commons Votes data.',
-		defaults: { name: 'parliament-commonsvotes' },
+		defaults: { name: 'Parliament Commonsvotes' },
 		usableAsTool: true,
 		inputs: [NodeConnectionTypes.Main],
 		outputs: [NodeConnectionTypes.Main],
